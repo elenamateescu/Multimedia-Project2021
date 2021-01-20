@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="2_1082_MATEESCU_ELENA.css"/>
+        <title>Multimedia Playlist</title>
+
+        <!--Libraria jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="2_1082_MATEESCU_ELENA.js"></script>
+
+        <!--Materials+Icons pentru stilizarea butoanelor-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">       
+    </head>
+
+    <body>
+            
+        <div class="header">
+           <h1 id="header-title">~Multimedia Video-Player~</h1>
+           <!-- Adaugarea de noi filme prin intermediul unui control de tip input-->
+            <input type="file" accept="video/*" class="custom-file-input" >
+
+        </div>
+
+
+        <div class="container-all">
+            <!-- Clasa material-icons- iconite pentru butoane-->
+        <div id="video_player">
+            <button id="buton-prev"><i class="material-icons" controls >navigate_before</i></button>
+            <!--4 filme stocate static in cadrul aplicatiei in folderul 
+                media sub forma de lista, fiecare avand atribuit un buton de stergere video(definitiv) din playlist -->
+            <ul class="video-list">
+                <li><button class="buton-sterge-video"><i class="material-icons">delete_forever</i></button><video class="playlist-video-item" src="media/video1.mp4" width="200px"/></li>
+                <li><button class="buton-sterge-video"><i class="material-icons">delete_forever</i></button><video class="playlist-video-item" src="media/video2.mp4" width="200px" /></li>
+                <li><button class="buton-sterge-video"><i class="material-icons">delete_forever</i></button><video class="playlist-video-item" src="media/video3.mp4" width="200px" /></li>
+                <li><button class="buton-sterge-video"><i class="material-icons">delete_forever</i></button><video class="playlist-video-item" src="media/video4.mp4" width="200px" /></li>
+            </ul>
+            <button id="buton-next"><i class="material-icons">navigate_next</i></button>
+        </div>
+
+        <!-- Background principal-->
+        <style>
+            div {
+              background-image: url('https://lh6.googleusercontent.com/proxy/eHcPlq6FZ76e6xygu-4eh0vy1daaeFTT-xg_nmGpaoH1Catvm-qn1UiPG6XFCDS6wL5WqgFaNcJ0SGuO8-VCC-6ZIOZMkOjPjz5p1UWFBwCUAKF49O4BjlmYFCX-2b_ugsr2sFQ8fXql5NCBCWPe7NkG=s0-d');
+            }
+            </style>
+
+    
+        <div id="video-container">
+                <div class="effect-container">
+                    <ul class="option-list">
+                        <li class="option-item"><button id="buton-adauga-playlist" class="buton-action"><i class="material-icons">playlist_add</i></button></li>
+                    </ul>
+                </div>
+                <!-- Filmul care porneste automat cand deschidem pagina-->
+            <video style="border: 1px solid rgb(12, 12, 12);" src="media/video1.mp4" id="current-video" width="700px" height="420px">
+            
+            </video>
+            <canvas id="canvas1" width="700px" height="420px">
+            </canvas>
+            <div class="effect-container">
+                        <ul class="effect-list">
+                            
+                            <li class="effect-item"><button id="buton-adauga-pink" class="buton-effect">Pink</button></li>
+                            <li class="effect-item"><button id="buton-adauga-aspen" class="buton-effect">Aspen</button></li>
+                            <li class="effect-item"><button id="buton-adauga-Iceland" class="buton-effect">Iceland</button></li>
+                            <li class="effect-item"><button id="buton-adauga-bw" class="buton-effect">Black&White</button></li>
+                            <li class="effect-item"><button id="buton-adauga-inv" class="buton-effect">Negativ</button></li>
+                            <li class="effect-item"><button id="buton-normal" class="buton-effect">Normal</button></li>
+                        </ul>
+            </div>
+            <video id="review-video" src="media/video1.mp4" width="150"></video>
+        </div>
+        
+
+        <div>
+        </div>
+        
+        </div>
+    </body>
+</html>

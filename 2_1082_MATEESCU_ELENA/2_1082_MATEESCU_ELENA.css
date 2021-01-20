@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap');
+
+
+.header {
+  text-align: center;
+  height: 100px;
+  margin: 0 auto;
+  background-image: url(https://img.freepik.com/free-vector/neon-lights-wallpaper_52683-46462.jpg?size=626&ext=jpg&ga=GA1.2.1090102593.1601337600);
+  box-shadow: inset 0 0 20px #000000;
+}
+
+.video-list {
+  margin-top: 15px;
+}
+
+.custom-file-input {
+  color: transparent;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+  
+}
+.custom-file-input::before {
+  content: "Adauga un video nou";
+  color: rgb(51, 8, 45);
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+  
+}
+
+.custom-file-input:hover::before {
+  border-color: rgb(20, 2, 20);
+}
+.custom-file-input:active {
+  outline: 0;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #846b85, #f9f9f9);
+}
+
+#header-title {
+  color: #c4609a;
+  margin: 0 auto;
+  position: relative;
+  top: 25px;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Bodoni Moda', serif;
+  margin: 0;
+}
+
+#video-container {
+  display: flex;
+  justify-content: center;
+}
+#video_player {
+  display: flex;
+  justify-content: flex-start;
+  width: 800px;
+  height: 130px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+
+.video-list {
+  transition: all 0.7s;
+  display: flex;
+  float: left;
+  margin-left: 50px;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+li {
+  width: inherit;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+.playlist-video-item {
+  border-radius: 3px;
+}
+
+#buton-prev {
+  width: 50px;
+  height: 115px;
+  margin-top: 14px;
+  position: absolute;
+  z-index: 99;
+  border-radius: 7%;
+  background-color: rgb(233, 32, 156);
+}
+
+#buton-next {
+  width: 50px;
+  height: 115px;
+  margin-top: 14px;
+  position: absolute;
+  right: 0%;
+  z-index: 99;
+  border-radius: 7%;
+  background-color: rgb(233, 32, 156);
+}
+
+.playlist-options {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.buton-sterge-video {
+  position: absolute;
+  z-index: 100;
+  background-color: rgb(224, 202, 224);
+  border-radius: 10%;
+  display: none;
+}
+
+li:hover > .buton-sterge-video {
+  text-align: center;
+
+  display: block;
+}
+
+.empty-playlist {
+  margin: 0 auto;
+  margin-top: 3%;
+}
+
+.option-list {
+  list-style: none;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.effect-list {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.effect-item {
+  padding: 5px;
+}
+
+.buton-add.effect {
+  text-align: center;
+  width: 115px;
+  height: 46px;
+
+}
+
+.effect-container {
+  display: flex;
+  justify-content: center;
+  width: 10%;
+}
+
+.buton-action {
+  text-align: center;
+  width: 115px;
+  height: 60px;
+}
+
+#current-video {
+  position: absolute;
+  border: transparent;
+  z-index: -1;
+}
+
+.buton-effect {
+  height: 60px;
+  width: 100px;
+  border-radius: 8%;
+}
+
+.buton-action {
+  height: 60px;
+  width: 100px;
+  border-radius: 8%;
+}
+
+#review-video {
+  position: absolute;
+  top: 620px;
+  border: 1px solid rgb(10, 9, 9);
+  display: none;
+}
+
+#canvas1 {
+  position: relative;
+}
